@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="telacadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Tela de Cadastro - Game Bazar</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div>
+            <span class="game">Game</span>
+            <span class="bazar">Bazar</span>
+        </div>
+        <div class="login-section">
+            <!-- Ícone de usuário com Font Awesome -->
+            <i class="fas fa-user-circle"></i>
+            <span class="entre">Entre ou</span>
+            <span class="cadastro">Cadastre-se</span>
+        </div>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <main>
+        <section class="cadastro-form">
+            <h1>CRIAR CONTA</h1>
+            <form action="#" method="post">
+                <!-- Tipo de conta -->
+                <div class="account-type">
+                    <label>Tipo de conta</label>
+                    <br>
+                    <!-- Separando em uma nova linha -->
+                    <div class="radio-options">
+                        <input type="radio" id="pessoa-fisica" name="tipoConta" value="pessoaFisica" checked>
+                        <label for="pessoa-fisica">Pessoa Física</label>
+                        <input type="radio" id="pessoa-juridica" name="tipoConta" value="pessoaJuridica">
+                        <label for="pessoa-juridica">Pessoa Jurídica</label>
+                    </div>
+                </div>
+
+                <!-- Campos do formulário -->
+                <div class="form-group">
+                    <input type="text" placeholder="Nome Completo*" required>
+                    <input type="text" placeholder="CPF*" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Gênero**">
+                    <input type="date" placeholder="Data de nascimento*" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Telefone Celular*" required>
+                    <input type="email" placeholder="Email*" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Crie sua senha*" required>
+                    <input type="password" placeholder="Confirme sua senha*" required>
+                </div>
+
+                <!-- Botão de continuar -->
+                <button type="submit">CONTINUAR</button>
+
+                <!-- Informações adicionais -->
+                <p class="info">(*) Campos obrigatórios</p>
+                <p class="info">(**) As opções "homem" e "mulher" abrangem cisgêneros e transgêneros. A opção "outros" inclui gênero fluido, não-binário, queer, intersexo e outras identidades de gênero. Utilize a opção "não especificar" caso não queira preencher esse campo ou não encontre a opção que mais se identifica.</p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
