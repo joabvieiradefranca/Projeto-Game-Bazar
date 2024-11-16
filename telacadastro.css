@@ -46,6 +46,8 @@ header {
     display: flex;
     align-items: center;
     gap: 10px; /* Ajusta a distância entre o ícone e o texto */
+    position: relative;
+    right: 33px;
 }
 
 .login-section .fas {
@@ -53,7 +55,10 @@ header {
     color: white;
 }
 
-.entre, .cadastro {
+.entre a {
+
+    text-decoration: none;
+    color: white;
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
