@@ -1,0 +1,273 @@
+*, 
+::after,
+::before {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff4500;
+    border-bottom: 6px solid #ffa500;
+    height: 85px;
+}
+
+
+.game {
+
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    left: 6%;
+    top: 1%;
+    color: white;
+
+}
+
+.bazar {
+
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    color: white;
+}
+
+.div1 {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    left: 12%;
+    top: 6px;
+
+}
+
+.meuCarrinho {
+
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    position: relative;
+    right: 12%;
+    top: 18px;
+
+}
+
+.div2 {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    right: 15.5%;
+}
+
+.div3 {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    bottom: 70px;
+    left: 38%;
+
+}
+
+.atendimento-cliente {
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.atendimento {
+    
+    display: block;
+    font-weight: normal;
+
+}
+
+.cliente {
+
+    display: block;
+    font-weight: bold;
+
+}
+
+/* Estilos para a navegação e o conteúdo principal */
+main {
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+/* Estilos para as seções dentro do conteúdo principal */
+.opcoes-entrega,
+.produto,
+.desconto-frete,
+.total,
+.acoes {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #333;
+}
+
+.opcoes-entrega h2,
+.produto h2,
+.total h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+.opcoes-entrega p,
+.produto p,
+.desconto-frete p,
+.total p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para a seção de endereço de entrega */
+.endereco-entrega p {
+    margin-bottom: 8px;
+}
+
+.endereco-entrega strong {
+    color: #ff4500;
+}
+
+/* Estilos para o produto no carrinho */
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.produto-info p {
+    font-size: 16px;
+}
+
+/* Estilos para o produto */
+.produto-info img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ffa500;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Estilos para as informações de desconto e frete */
+.desconto,
+.frete {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.desconto p,
+.frete p {
+    font-weight: bold;
+}
+
+/* Estilos para o total */
+.total p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.total strong {
+    color: #ff4500;
+}
+
+.acoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.acoes a {
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.btn-continuar, .btn-trocar-endereco {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffa500;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-continuar:hover, .btn-trocar-endereco:hover {
+    background-color: #e63900; /* Tom mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+.btn-continuar:active, .btn-trocar-endereco:active {
+    background-color: #cc3300; /* Tom ainda mais escuro ao clicar */
+    transform: scale(0.95); /* Leve redução no tamanho */
+}
+
+.btn-trocar-endereco {
+    background-color: #ff4500; /* Cor diferente para o botão de trocar endereço */
+}
+
+.btn-trocar-endereco:hover {
+    background-color: #e63900; /* Cor diferente no hover */
+}
+
+.btn-trocar-endereco:active {
+    background-color: #cc3300; /* Cor diferente ao clicar */
+}
+
+
+/* Estilos para o footer */
+footer {
+    position: relative;
+    top: 5px;
+    padding: 33px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: #ffa500;
+    margin-top: 20px;
+    margin: 0;
+
+}

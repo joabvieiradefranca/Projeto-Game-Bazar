@@ -1,0 +1,96 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #333;
+}
+
+/* Cabeçalho */
+header.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff4500;
+    color: white;
+    padding: 20px 25px;
+    border-bottom: 6px solid #ffa500;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Botões de login e cadastro */
+.user-options {
+    display: flex;
+    gap: 15px;
+}
+
+.user-options a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.user-options .login-btn {
+    background-color: #ff4500;
+}
+
+.user-options .signup-btn {
+    background-color: #ff4500;
+}
+
+.user-options a:hover {
+    opacity: 0.8;
+}
+
+/* Quadro de Departamentos */
+main.departments-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* Altura da tela menos o cabeçalho */
+}
+
+.departments {
+    background-color: #000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: center;
+    width: 300px;
+}
+
+.departments h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #ff4500;
+}
+
+.departments ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.departments ul li {
+    margin: 10px 0;
+}
+
+.departments ul li a {
+    text-decoration: none;
+    color: #ffa500;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.departments ul li a:hover {
+    color: #ffa500;
+
+}

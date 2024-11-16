@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <title>Tela de carrinho do Game Bazar</title>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="game">Game</span>
+            <span class="bazar">Bazar</span>
+        </div>
+        <div class="div1">
+            <!-- Ícone do carrinho de compras (SVG) -->
+            <svg width="36" height="36" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.4167 37.5C33.1042 37.5 31.25 39.3542 31.25 41.6667C31.25 42.7718 31.689 43.8316 32.4704 44.613C33.2518 45.3944 34.3116 45.8334 35.4167 45.8334C36.5217 45.8334 37.5815 45.3944 38.3629 44.613C39.1443 43.8316 39.5833 42.7718 39.5833 41.6667C39.5833 40.5616 39.1443 39.5018 38.3629 38.7204C37.5815 37.939 36.5217 37.5 35.4167 37.5ZM2.08333 4.16669V8.33335H6.25L13.75 24.1459L10.9167 29.25C10.6042 29.8334 10.4167 30.5209 10.4167 31.25C10.4167 32.3551 10.8556 33.4149 11.6371 34.1963C12.4185 34.9777 13.4783 35.4167 14.5833 35.4167H39.5833V31.25H15.4583C15.3202 31.25 15.1877 31.1951 15.09 31.0975C14.9924 30.9998 14.9375 30.8673 14.9375 30.7292C14.9375 30.625 14.9583 30.5417 15 30.4792L16.875 27.0834H32.3958C33.9583 27.0834 35.3333 26.2084 36.0417 24.9375L43.5 11.4584C43.6458 11.125 43.75 10.7709 43.75 10.4167C43.75 9.86415 43.5305 9.33425 43.1398 8.94355C42.7491 8.55285 42.2192 8.33335 41.6667 8.33335H10.8542L8.89583 4.16669" fill="#1C1C1C"/>
+            </svg>
+        </div>
+
+        <h3 class="meuCarrinho">MEU CARRINHO</h3>
+
+        <div class="div2">
+            <!-- Ícone do perfil ou outro ícone (SVG) -->
+            <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 0C8.1 0 0 7.2 0 16C0 20.2 1.8 24.2 5.04 27C5.04 28.2 4.32 31.4 0 36C0 36 6.3 36 11.7 31C13.68 31.6 15.84 32 18 32C27.9 32 36 24.8 36 16C36 7.2 27.9 0 18 0ZM19.8 24H16.2V20H19.8V24ZM23.04 14C22.5 14.8 21.78 15.2 21.06 15.6C20.52 16 20.34 16.2 20.16 16.6C19.8 17 19.8 17.4 19.8 18H16.2C16.2 17 16.38 16.4 16.74 15.8C17.1 15.4 17.82 14.8 18.72 14.2C19.26 14 19.62 13.6 19.8 13.2C19.98 12.8 20.16 12.2 20.16 11.8C20.16 11.2 19.98 10.8 19.62 10.4C19.26 10 18.72 9.8 18.18 9.8C17.64 9.8 17.28 10 16.92 10.2C16.56 10.4 16.38 10.8 16.38 11.4H12.78C12.96 10 13.5 8.8 14.4 8C15.3 7.2 16.56 7 18.18 7C19.8 7 21.24 7.4 22.14 8.2C23.04 9 23.58 10.2 23.58 11.6C23.76 12.4 23.58 13.2 23.04 14Z" fill="#1C1C1C"/>
+            </svg>
+        </div>
+    </header>
+
+    <nav>
+        <div class="div3">
+            <a href="index6.html" class="atendimento-cliente">
+                <span class="atendimento">ATENDIMENTO</span>
+                <span class="cliente">AO CLIENTE</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="opcoes-entrega">
+            <h2>Opções de Entrega</h2>
+            <div class="endereco-entrega">
+                <p><strong>Endereço de Entrega:</strong></p>
+                <p>[Endereço será preenchido automaticamente]</p>
+                <p><strong>Receber em:</strong> [Nome do destinatário]</p>
+            </div>
+        </section>
+
+        <section class="produto">
+            <h2>Produto no Carrinho</h2>
+            <div class="produto-info">
+                <div class="produto-foto">
+                    <p><strong>Foto do Produto</strong></p>
+                    <div class="borda-foto">
+                        <!-- A imagem do produto será inserida aqui -->
+                    </div>
+                </div>
+                <p><strong>Nome do Produto:</strong> [Nome do produto]</p>
+                <p><strong>Quantidade:</strong> [Quantidade]</p>
+            </div>
+        </section>
+
+        <section class="acoes">
+            <a href="index7.html">
+                <button class="btn-continuar">Continuar para Pagamento</button>
+            </a>
+            <button class="btn-trocar-endereco">Trocar Endereço</button>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Rodapé, se necessário -->
+    </footer>
+</body>
+</html>

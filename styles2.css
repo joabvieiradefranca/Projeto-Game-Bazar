@@ -33,8 +33,13 @@ h1 {
 .search-bar {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color: #ff4500;
+}
+
+.search-bar a {
+    display: inline-block;
 }
 
 .departments {
@@ -44,6 +49,12 @@ h1 {
     padding: 10px 20px;
     margin-right: 10px;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.departments:hover {
+    background-color: #d4313a; /* cor um pouco mais escura ao passar o mouse */
 }
 
 input[type="text"] {
@@ -51,6 +62,7 @@ input[type="text"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .banner {
@@ -140,4 +152,10 @@ input[type="text"] {
 .product-item p:nth-child(2) {
     color: #06ac00;
     font-size: 14px;
+}
+
+.cart1 {
+
+    position: relative;
+    left: 20px;
 }
