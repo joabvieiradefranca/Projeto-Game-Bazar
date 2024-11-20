@@ -130,3 +130,27 @@ main {
 .atendimento-cliente:hover {
     color: #ffa500;
 }
+
+
+.buttonInicio {
+
+    position: relative;
+    bottom: 270px;
+    right: 270%;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    background-color: #ec5108;
+    border-radius: 2px;
+    border: none;
+
+}
+
+.buttonInicio:hover {
+
+    background-color: #e65a00;
+}
