@@ -13,32 +13,43 @@
         <div class="bazar">Bazar</div>
     </header>
 
-    <main>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-icon"></div>
+        <p>Carregando...</p>
+    </div>
 
-        <a href="index2.html">
-            <button class="buttonInicio">Início</button>
-            
-        </a>
-        <section class="chat">
-            <div class="chat-header">
-                <h2>Como podemos ajudar?</h2>
-                <input type="text" placeholder="Pesquise" class="search-box">
-            </div>
+    <!-- Conteúdo do site -->
+    <div class="content" id="content" style="display: none;">
+        <!-- O conteúdo do site será colocado aqui -->
+        <main>
 
-            <div class="chat-options">
-                <ul>
-                    <li><a href="#" class="option">Tópicos de ajuda</a></li>
-                    <li><a href="#" class="option">Dúvidas sobre cadastro</a></li>
-                    <li><a href="#" class="option">Dúvidas sobre pagamento</a></li>
-                    <li><a href="#" class="option">Dúvidas sobre garantia</a></li>
-                    <li><a href="#" class="option">Dúvidas sobre entrega</a></li>
-                </ul>
-            </div>
-
-            <div class="chat-footer">
-                <a href="index6.html" class="atendimento-cliente">Atendimento ao Cliente</a>
-            </div>
-        </section>
-    </main>
+            <a href="index2.html">
+                <button class="buttonInicio">Início</button>
+                
+            </a>
+            <section class="chat">
+                <div class="chat-header">
+                    <h2>Como podemos ajudar?</h2>
+                    <input type="text" placeholder="Pesquise" class="search-box">
+                </div>
+    
+                <div class="chat-options">
+                    <ul>
+                        <li><a href="#" class="option">Tópicos de ajuda</a></li>
+                        <li><a href="#" class="option">Dúvidas sobre cadastro</a></li>
+                        <li><a href="#" class="option">Dúvidas sobre pagamento</a></li>
+                        <li><a href="#" class="option">Dúvidas sobre garantia</a></li>
+                        <li><a href="#" class="option">Dúvidas sobre entrega</a></li>
+                    </ul>
+                </div>
+    
+                <div class="chat-footer">
+                    <a href="index6.html" class="atendimento-cliente">Atendimento ao Cliente</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

@@ -61,98 +61,109 @@
 
     </nav>
 
-    <main>
-        <!--<div>
-            <button type="submit" class="botao1" style="cursor: pointer">MONTE SEU PC GAMER!</button>
-        </div>-->
-        <div>
-            <button type="submit" class="botao1">MONTE SEU PC GAMER!</button>
-        </div>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-icon"></div>
+        <p>Carregando...</p>
+    </div>
 
-        <div>
-            <img src="Pasta-imagens/Montagem-de-pc-gamer 1.png" alt="Imagem de um PC" class="imagem1">
-        </div>
-        <div>
-            <form class="form1">
-                <div class="div1">
-                    <!-- <label for="email">E-mail, CPF ou CNPJ</label> -->
-                    <span class="icon2">
-                        <svg width="14" height="18" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.7019 19.697C16.7019 16.8287 13.1869 14.5034 8.85095 14.5034C4.51499 14.5034 1 16.8287 1 19.697M8.85095 11.3872C6.14097 11.3872 3.94411 9.06197 3.94411 6.19362C3.94411 3.32526 6.14097 1 8.85095 1C11.5609 1 13.7578 3.32526 13.7578 6.19362C13.7578 9.06197 11.5609 11.3872 8.85095 11.3872Z" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                    </span>
-                    <input type="text" placeholder="E-mail, CPF ou CNPJ" required>
-                    <!-- <input id="email" type="text" value="E-mail, CPF ou CNPJ" placeholder="E-mail, CPF ou CNPJ" required> -->
-                </div>
-                <br>
-                
-                <div class="div2">
-                    <!-- <label for="senha">Senha</label> -->
-                    <span class="icon3">
-                        <svg width="14" height="18" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.96274 18.697C1.42298 18.697 0.961086 18.5228 0.577044 18.1744C0.193002 17.826 0.000654245 17.4066 0 16.9163V8.01301C0 7.52332 0.192348 7.10427 0.577044 6.75586C0.961741 6.40744 1.42364 6.23293 1.96274 6.23234H2.9441V4.45167C2.9441 3.22004 3.42269 2.17034 4.37985 1.30256C5.33701 0.43478 6.49404 0.000593556 7.85095 0C9.20851 0 10.3659 0.434186 11.323 1.30256C12.2802 2.17093 12.7584 3.22064 12.7578 4.45167V6.23234H13.7392C14.2789 6.23234 14.7411 6.40685 15.1258 6.75586C15.5105 7.10487 15.7025 7.52392 15.7019 8.01301V16.9163C15.7019 17.406 15.5099 17.8254 15.1258 18.1744C14.7418 18.5234 14.2796 18.6976 13.7392 18.697H1.96274ZM1.96274 16.9163H13.7392V8.01301H1.96274V16.9163ZM7.85095 14.2453C8.3907 14.2453 8.85292 14.0711 9.23762 13.7227C9.62232 13.3743 9.81434 12.955 9.81368 12.4647C9.81368 11.975 9.62166 11.5559 9.23762 11.2075C8.85358 10.8591 8.39135 10.6846 7.85095 10.684C7.31119 10.684 6.8493 10.8585 6.46525 11.2075C6.08121 11.5565 5.88886 11.9756 5.88821 12.4647C5.88821 12.9544 6.08056 13.3737 6.46525 13.7227C6.84995 14.0717 7.31185 14.2459 7.85095 14.2453ZM4.90684 6.23234H10.7951V4.45167C10.7951 3.70973 10.5088 3.07907 9.93635 2.55971C9.36389 2.04035 8.66875 1.78067 7.85095 1.78067C7.03314 1.78067 6.338 2.04035 5.76554 2.55971C5.19307 3.07907 4.90684 3.70973 4.90684 4.45167V6.23234Z" fill="#FF4500"/>
-                            </svg>
-        
-                    </span>
-                    <input type="password" placeholder="Senha">
-                    <!-- <input id="senha" type="password" value="Senha" placeholder="Senha"> -->
-                    
-                    <span class="icon4">
-                       <svg width="14" height="18" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.33109 1L18.1414 17.2583M14.6829 13.9618C13.3463 14.7022 11.8357 15.2259 10.2362 15.2259C6.74745 15.2259 3.68124 12.7342 1.9229 10.9367C1.45877 10.4622 1.22673 10.225 1.07902 9.75927C0.973676 9.42715 0.973643 8.83097 1.07902 8.49887C1.22678 8.0332 1.45929 7.79541 1.92435 7.32007C2.8106 6.41422 4.02884 5.33242 5.46578 4.48207M17.6473 11.8051C17.9764 11.5075 18.2778 11.2146 18.5483 10.9382L18.5512 10.9351C19.0143 10.4617 19.2464 10.2244 19.3939 9.75976C19.4993 9.42766 19.499 8.83124 19.3937 8.49913C19.246 8.0336 19.0137 7.7957 18.5499 7.32153C16.7916 5.52395 13.725 3.03228 10.2362 3.03228C9.90275 3.03228 9.57311 3.05505 9.2481 3.09781M11.5435 10.6534C11.1951 10.9696 10.7375 11.1614 10.2362 11.1614C9.14477 11.1614 8.25996 10.2515 8.25996 9.12914C8.25996 8.58093 8.47104 8.08361 8.81419 7.71805" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
-                    </span>
-                </div>
-                <br>
-                
-                
-                <div class="div3">
-                    <button type="submit" class="botao2">
-                        <span class="icon5">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="33px" viewBox="0 -960 960 960" width="33px" fill="#ffffff"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg>
-        
+    <!-- Conteúdo do site -->
+    <div class="content" id="content" style="display: none;">
+        <!-- O conteúdo do site será colocado aqui -->
+        <main>
+            <!--<div>
+                <button type="submit" class="botao1" style="cursor: pointer">MONTE SEU PC GAMER!</button>
+            </div>-->
+            <div>
+                <button type="submit" class="botao1">MONTE SEU PC GAMER!</button>
+            </div>
+    
+            <div>
+                <img src="Pasta-imagens/Montagem-de-pc-gamer 1.png" alt="Imagem de um PC" class="imagem1">
+            </div>
+            <div>
+                <form class="form1">
+                    <div class="div1">
+                        <!-- <label for="email">E-mail, CPF ou CNPJ</label> -->
+                        <span class="icon2">
+                            <svg width="14" height="18" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.7019 19.697C16.7019 16.8287 13.1869 14.5034 8.85095 14.5034C4.51499 14.5034 1 16.8287 1 19.697M8.85095 11.3872C6.14097 11.3872 3.94411 9.06197 3.94411 6.19362C3.94411 3.32526 6.14097 1 8.85095 1C11.5609 1 13.7578 3.32526 13.7578 6.19362C13.7578 9.06197 11.5609 11.3872 8.85095 11.3872Z" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                         </span>
-                        Entrar</button>
+                        <input type="text" placeholder="E-mail, CPF ou CNPJ" required>
+                        <!-- <input id="email" type="text" value="E-mail, CPF ou CNPJ" placeholder="E-mail, CPF ou CNPJ" required> -->
+                    </div>
+                    <br>
+                    
+                    <div class="div2">
+                        <!-- <label for="senha">Senha</label> -->
+                        <span class="icon3">
+                            <svg width="14" height="18" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.96274 18.697C1.42298 18.697 0.961086 18.5228 0.577044 18.1744C0.193002 17.826 0.000654245 17.4066 0 16.9163V8.01301C0 7.52332 0.192348 7.10427 0.577044 6.75586C0.961741 6.40744 1.42364 6.23293 1.96274 6.23234H2.9441V4.45167C2.9441 3.22004 3.42269 2.17034 4.37985 1.30256C5.33701 0.43478 6.49404 0.000593556 7.85095 0C9.20851 0 10.3659 0.434186 11.323 1.30256C12.2802 2.17093 12.7584 3.22064 12.7578 4.45167V6.23234H13.7392C14.2789 6.23234 14.7411 6.40685 15.1258 6.75586C15.5105 7.10487 15.7025 7.52392 15.7019 8.01301V16.9163C15.7019 17.406 15.5099 17.8254 15.1258 18.1744C14.7418 18.5234 14.2796 18.6976 13.7392 18.697H1.96274ZM1.96274 16.9163H13.7392V8.01301H1.96274V16.9163ZM7.85095 14.2453C8.3907 14.2453 8.85292 14.0711 9.23762 13.7227C9.62232 13.3743 9.81434 12.955 9.81368 12.4647C9.81368 11.975 9.62166 11.5559 9.23762 11.2075C8.85358 10.8591 8.39135 10.6846 7.85095 10.684C7.31119 10.684 6.8493 10.8585 6.46525 11.2075C6.08121 11.5565 5.88886 11.9756 5.88821 12.4647C5.88821 12.9544 6.08056 13.3737 6.46525 13.7227C6.84995 14.0717 7.31185 14.2459 7.85095 14.2453ZM4.90684 6.23234H10.7951V4.45167C10.7951 3.70973 10.5088 3.07907 9.93635 2.55971C9.36389 2.04035 8.66875 1.78067 7.85095 1.78067C7.03314 1.78067 6.338 2.04035 5.76554 2.55971C5.19307 3.07907 4.90684 3.70973 4.90684 4.45167V6.23234Z" fill="#FF4500"/>
+                                </svg>
+            
+                        </span>
+                        <input type="password" placeholder="Senha">
+                        <!-- <input id="senha" type="password" value="Senha" placeholder="Senha"> -->
+                        
+                        <span class="icon4">
+                           <svg width="14" height="18" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.33109 1L18.1414 17.2583M14.6829 13.9618C13.3463 14.7022 11.8357 15.2259 10.2362 15.2259C6.74745 15.2259 3.68124 12.7342 1.9229 10.9367C1.45877 10.4622 1.22673 10.225 1.07902 9.75927C0.973676 9.42715 0.973643 8.83097 1.07902 8.49887C1.22678 8.0332 1.45929 7.79541 1.92435 7.32007C2.8106 6.41422 4.02884 5.33242 5.46578 4.48207M17.6473 11.8051C17.9764 11.5075 18.2778 11.2146 18.5483 10.9382L18.5512 10.9351C19.0143 10.4617 19.2464 10.2244 19.3939 9.75976C19.4993 9.42766 19.499 8.83124 19.3937 8.49913C19.246 8.0336 19.0137 7.7957 18.5499 7.32153C16.7916 5.52395 13.725 3.03228 10.2362 3.03228C9.90275 3.03228 9.57311 3.05505 9.2481 3.09781M11.5435 10.6534C11.1951 10.9696 10.7375 11.1614 10.2362 11.1614C9.14477 11.1614 8.25996 10.2515 8.25996 9.12914C8.25996 8.58093 8.47104 8.08361 8.81419 7.71805" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        </span>
+                    </div>
+                    <br>
+                    
+                    
+                    <div class="div3">
+                        <button type="submit" class="botao2">
+                            <span class="icon5">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="33px" viewBox="0 -960 960 960" width="33px" fill="#ffffff"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg>
+            
+                            </span>
+                            Entrar</button>
+                    </div>
+                
+                </form>
+                
+                <div class="div4">
+                    <a href="">Esqueceu a senha?</a>
                 </div>
-            
-            </form>
-            
-            <div class="div4">
-                <a href="">Esqueceu a senha?</a>
-            </div>
-            <div class="div5">
-                <hr class="hr1">
+                <div class="div5">
+                    <hr class="hr1">
+                </div>
+                
             </div>
             
-        </div>
-        
-       
-    </main>
-    <footer>
-        <p class="p1">
-            Quero acessar com minhas redes sociais
-        </p>
-        <div class="redes-sociais">
-            <a href="link-para-o-login-instagram" aria-label="Entrar com Instagram">
-                <img src="Pasta-imagens/Imagem do instagram.png" alt="Imagem do instagram" class="imagem2">
-            </a>
-
-            <a href="link-para-login-google" aria-label="Entrar com Google">
-                <img src="Pasta-imagens/Imagem do google.png" alt="Imagem do google" class="imagem3">
-            </a>
-
-            <a href="link-para-login-facebook" aria-label="Entrar com Facebook">
-                <img src="Pasta-imagens/Imagem do facebook.png" alt="Imagem do facebook" class="imagem4">
-            </a>
-
-        </div>
-        
-        <h5 class="doh01">Novo no GameBazar?</h5>
-        <div class="div6">
-            <a href="telacadastro.html">Cadastre-se</a>
-        </div>
-
-    </footer>
+           
+        </main>
+        <footer>
+            <p class="p1">
+                Quero acessar com minhas redes sociais
+            </p>
+            <div class="redes-sociais">
+                <a href="link-para-o-login-instagram" aria-label="Entrar com Instagram">
+                    <img src="Pasta-imagens/Imagem do instagram.png" alt="Imagem do instagram" class="imagem2">
+                </a>
+    
+                <a href="link-para-login-google" aria-label="Entrar com Google">
+                    <img src="Pasta-imagens/Imagem do google.png" alt="Imagem do google" class="imagem3">
+                </a>
+    
+                <a href="link-para-login-facebook" aria-label="Entrar com Facebook">
+                    <img src="Pasta-imagens/Imagem do facebook.png" alt="Imagem do facebook" class="imagem4">
+                </a>
+    
+            </div>
+            
+            <h5 class="doh01">Novo no GameBazar?</h5>
+            <div class="div6">
+                <a href="telacadastro.html">Cadastre-se</a>
+            </div>
+    
+        </footer>
+    </div>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
